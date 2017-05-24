@@ -1,0 +1,201 @@
+@function tint($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
+
+@function shade($color, $percent) {
+  @return mix(#000, $color, $percent);
+}
+
+$sm: "(min-width: 576px)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+
+$gray: #BDBDBD;
+$red: #970000;
+$olive: #3D9970;
+$darkText: #464a4c;
+
+$sherpa-blue: #004358;
+$elf-green: #1F8A70;
+$las-palmas: #BEDB39;
+$lemon: #FFE11A;
+$safety-orange: #FD7400;
+
+$onlineColor: $las-palmas;
+$offlineColor: $elf-green;
+$doesNotExistColor: $safety-orange;
+
+$bg: $sherpa-blue;
+$buttonColor: $onlineColor;
+$buttonColorHover: $lemon;
+
+
+
+.imgc {
+
+	img {
+
+		max-width: 100%;
+		width: 100%;
+
+	}
+
+}
+
+
+@media #{$lg} {
+
+	.container {
+
+		width: 768px;
+
+	}
+
+}
+
+
+@media #{$xl} {
+
+	.container {
+
+		width: 768px;
+
+	}
+
+}
+
+
+.hide {
+
+	display: none !important;
+
+}
+
+
+.show {
+
+	display: inline !important;
+
+}
+
+
+body {
+
+	background-color: $bg;
+	color: white;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+
+}
+
+
+body, button, input, optgroup, select, textarea {
+
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.6;
+
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+
+	font-family: 'Gentium Basic', serif;
+
+}
+
+
+div p:last-child {
+
+	margin-bottom: 0;
+
+}
+
+
+.twitch__header {
+
+	font-size: 74px;
+	line-height: 1.1;
+	margin-bottom: 20px;
+
+}
+
+
+.twitch__card {
+
+	margin-bottom: 30px;
+	border: none;
+
+	&:hover,
+	&:focus {
+
+		text-decoration: none;
+		outline: none;		
+
+	}
+
+	.card-block {
+
+		padding: 16px;
+
+	}
+
+}
+
+
+.twitch__card-header {
+
+	padding: 8px 18px;
+	background-color: $buttonColor;
+	color: $bg;
+	
+	.online:hover &,
+	.online:focus & {
+
+		background-color: $buttonColorHover;
+
+	}
+
+	.offline & {
+
+		background-color: $offlineColor;
+		color: tint($bg, 70%);
+
+	}
+	
+	.does-not-exist & {
+
+		background-color: $doesNotExistColor;
+
+	}	
+	
+
+}
+
+
+.twitch__title {
+
+	font-size: 32px;
+	line-height: 1.1;
+	margin-bottom: 0;
+
+}
+
+
+.twitch__intro {
+
+	color: $darkText;
+	margin-bottom: 0;
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+extends _default
+
+block head
+	- var pageTitle = 'FCC Use The Twitchtv JSON API'
+	- var metaDescription = "A webpage that shows the currently active streams on Twitchtv, built as part of Free Code Camp's 'Intermediate Front End Development Projects', using Pug, SCSS and Bootstrap 4."	
+	- var companyName = 'Free Code Camp'
+	- var bodyClass = 'twitch-tv'
+	- var googleFonts = 'Gentium+Basic|Work+Sans:300,400'
+	- var jsFile = 'index.js'
+
+block content
+	.twitch__outer
+		.twitch.container
+			h1.twitch__header TwitchTV Streams
+			.twitch__results

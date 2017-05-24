@@ -1,0 +1,73 @@
+.imgc img {
+  max-width: 100%;
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .container {
+    width: 768px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 768px; } }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: inline !important; }
+
+body {
+  background-color: #004358;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+body, button, input, optgroup, select, textarea {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gentium Basic', serif; }
+
+div p:last-child {
+  margin-bottom: 0; }
+
+.twitch__header {
+  font-size: 74px;
+  line-height: 1.1;
+  margin-bottom: 20px; }
+
+.twitch__card {
+  margin-bottom: 30px;
+  border: none; }
+  .twitch__card:hover, .twitch__card:focus {
+    text-decoration: none;
+    outline: none; }
+  .twitch__card .card-block {
+    padding: 16px; }
+
+.twitch__card-header {
+  padding: 8px 18px;
+  background-color: #BEDB39;
+  color: #004358; }
+  .online:hover .twitch__card-header,
+  .online:focus .twitch__card-header {
+    background-color: #FFE11A; }
+  .offline .twitch__card-header {
+    background-color: #1F8A70;
+    color: #b3c7cd; }
+  .does-not-exist .twitch__card-header {
+    background-color: #FD7400; }
+
+.twitch__title {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 0; }
+
+.twitch__intro {
+  color: #464a4c;
+  margin-bottom: 0; }
+/*# sourceMappingURL=style.css.map */
